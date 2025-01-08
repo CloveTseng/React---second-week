@@ -18,6 +18,7 @@ const Login = () => {
       .then((res) => {
         const { token, expired } = res.data;
         document.cookie = `cloveToken=${token}; expires=${new Date(expired)}`;
+        axios.defaults.headers.common['Authorization'] = token;
         setIsAuth(true);
       })
       .catch((err) => alert('登入失敗', err));
