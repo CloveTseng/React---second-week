@@ -10,7 +10,7 @@ const Card = (props) => {
         href="#"
         className="card"
         data-bs-toggle="modal"
-        data-bs-target="#ModalCoffee"
+        data-bs-target="#ModalWagashi"
         onClick={onCardClick}
       >
         <img src={imageUrl} className="card-img-top object-fit" alt={title} />
@@ -100,7 +100,7 @@ const Main = () => {
       </div>
       <div
         class="modal fade"
-        id="ModalCoffee"
+        id="ModalWagashi"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
